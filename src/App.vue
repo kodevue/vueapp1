@@ -7,7 +7,7 @@ import HelloWorld from './components/HelloWorld.vue'
 
   <h1>Hello</h1>
   <h1>Hello</h1>
-  <HelloWorld />
+  <HelloWorld msg="Input Message" />
 </template>
 
 <style scoped>

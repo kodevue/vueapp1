@@ -1,17 +1,10 @@
 <script setup>
-import HelloAsync from './components/HelloAsync.vue'
+import HelloSuspense from './components/HelloSuspense.vue'
 </script>
 
 
 <template>
-  <h1>Hello</h1>
-  <Suspense>
-    <HelloAsync>This is Slot Content</HelloAsync>
-  </Suspense>
-
-  <Suspense>
-    <HelloAsync />
-  </Suspense>
+  <HelloSuspense />
 </template>
 
 <style scoped>

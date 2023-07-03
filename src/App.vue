@@ -1,12 +1,13 @@
 <script setup>
-import HelloWorld from './components/HelloWorld.vue'
-import Hello from './components/Hello.vue'
+import HelloAsync from './components/HelloAsync.vue'
 </script>
 
 
 <template>
-  <Hello />
-  <HelloWorld msg="Input Message" />
+  <h1>Hello</h1>
+  <Suspense>
+    <HelloAsync />
+  </Suspense>
 </template>
 
 <style scoped>

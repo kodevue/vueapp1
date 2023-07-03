@@ -1,13 +1,14 @@
 <script setup>
 import { provide } from 'vue'
-import App1 from './components/App1.vue'
+import AppNavar from './components/AppNavar.vue'
 
 provide('message', 'hello!')
 </script>
 
 
 <template>
-  <App1 />
+  <AppNavar />
+  <h1>Hello</h1>
 </template>
 
 <style scoped>

@@ -10,6 +10,7 @@ provide('message', 'hello!')
 
 
 <template>
+  <h1 class="bg-dark text-light p-3">Hello Bootstrap</h1>
   <SimpleInjectComp />
   <MyAsyncComp />
   <MyAsyncComp>Slot Comp with Async Comp</MyAsyncComp>

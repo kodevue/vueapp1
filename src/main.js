@@ -1,9 +1,10 @@
-import './assets/main.css'
+import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap/dist/js/bootstrap.js'
 
+import { createApp } from 'vue'
+import { createPinia } from 'pinia'
 import { createRouter, createWebHistory } from 'vue-router'
 
-import { createApp } from 'vue'
 import About from './pages/About.vue'
 import Home from './pages/Home.vue'
 import App from './App.vue'
@@ -25,6 +26,9 @@ const router = createRouter({
   routes // short for `routes: routes`
 })
 
+const pinia = createPinia()
+
 const app = createApp(App)
+app.use(pinia)
 app.use(router)
 app.mount('#app')

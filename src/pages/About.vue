@@ -7,12 +7,12 @@ import HelloAsync from '@/components/HelloAsync.vue'
   <HelloAsync />
 
   <hello-async>
-    <h1 class="bg-primary">This is Slot Content</h1>
-    <template #desc-slot>
-      <h1>I am SLOT for Description</h1>
+    <h1 class="bg-primary text-light">This is Slot Content</h1>
+    <template v-slot:desc-slot>
+      <button class="btn btn-primary">SLOT Description</button>
     </template>
     <template #title-slot>
-      <h1>I am SLOT for Description</h1>
+      <button class="btn btn-secondary">SLOT Title</button>
     </template>
   </hello-async>
 </template>
